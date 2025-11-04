@@ -2,7 +2,7 @@ import Social from "./social";
 
 function Navbar() {
   return (
-    <div className="navbar bg-destructive shadow-sm fixed md:top-10 top-0 left-0 right-0 z-50 max-w-7xl mx-auto md:px-10 p-3 sm:p-4 rounded-md md:rounded-0">
+    <div className="navbar bg-destructive shadow-sm fixed md:top-10 top-0 left-0 right-0 z-50 max-w-7xl mx-auto md:px-10 md:py-5 p-3 sm:p-4 sm:rounded-md md:rounded-0">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -24,7 +24,7 @@ function Navbar() {
           </div>
           <ul
             tabIndex="-1"
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 -mx-3 shadow"
           >
             <li>
               <a>Item 1</a>
@@ -57,8 +57,10 @@ function Navbar() {
         </span>
       </div>
 
-      {/* <div className="navbar-center hidden lg:flex ">
-        <ul className="menu menu-horizontal px-1">
+      <div className="navbar-center hidden lg:flex ">
+        <Logo />
+
+        {/* <ul className="menu menu-horizontal px-1">
           <li>
             <a>ABOUT US</a>
           </li>
@@ -80,15 +82,29 @@ function Navbar() {
               </ul>
             </details>
           </li>
-        </ul>
-      </div> */}
+        </ul> */}
+      </div>
 
       <div className="navbar-end ">
         <Social />
-        <a className="btn">Connect wallet</a>
+        <a className="btn uppercase p-5 rounded-3xl  bg-white/0 border border-accent-content hover:bg-white/15 hover:text-white ml-4 md:flex">
+          Connect wallet
+        </a>
       </div>
     </div>
   );
 }
 
 export default Navbar;
+
+export function Logo() {
+  return (
+    <div>
+      <img
+        src="/halo-removebg.png"
+        alt="Misfit Gang Logo"
+        className="h-10 w-auto z-50 scale-400"
+      />
+    </div>
+  );
+}

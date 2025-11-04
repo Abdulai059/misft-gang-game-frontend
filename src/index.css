@@ -1,44 +1,44 @@
+/*  All @import statements must be first */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courier+Prime&display=swap');
 @import "tailwindcss";
+@import "tw-animate-css";
 @plugin "daisyui";
 
-
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courier+Prime&display=swap');
-@import "tw-animate-css";
-
 @custom-variant dark (&:is(.dark *));
-
-/* Define custom font families using @theme */
 @theme {
   --font-heading: "Bebas Neue", sans-serif;
   --font-body: "Courier Prime", monospace;
 }
 
+
+/* --------------------------------------
+   🌼 Custom Fonts
+----------------------------------------- */
 @font-face {
-  font-family: 'Zombie Hunger';
-  src: url('../public/Scary Halloween Font.ttf') format('opentype');
+  font-family: 'Scary Halloween';
+  src: url('/ScaryHalloweenFont.ttf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
+
+h1, .halloween {
+  font-family: 'Scary Halloween', cursive;
+}
+
 
 /* --------------------------------------
    🌍 Base Layer: Global Variables & Styles
 ----------------------------------------- */
 @layer base {
   :root {
-    /* Brand Palette */
     --color-brand--1: #ffb545;
     --color-brand--2: #00c46a;
-
-    /* Neutral Palette */
     --color-dark--0: #242a2e;
     --color-dark--1: #2d3439;
     --color-dark--2: #42484d;
     --color-light--1: #aaa;
     --color-light--2: #ececec;
     --color-light--3: #d6dee0;
-
-    /* Misfit Gang Theme */
     --color-primary: #ff4d4d;
     --color-secondary: #8b0000;
   }
@@ -78,16 +78,14 @@
     color: var(--color-dark--1);
   }
 
-  /* Glow Text Effect */
   .text-glow {
     text-shadow:
       0 0 10px rgba(255, 77, 77, 0.5),
       0 0 20px rgba(255, 77, 77, 0.3),
       0 0 30px rgba(255, 77, 77, 0.2);
   }
-
-  
 }
+
 
 /* --------------------------------------
    🖼 Utilities Layer: Custom Helpers
@@ -111,6 +109,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
+  --color-destructive-color: var(--destructive-color);
   --color-card-foreground: var(--card-foreground);
   --color-popover: var(--popover);
   --color-popover-foreground: var(--popover-foreground);
@@ -157,7 +156,8 @@
   --muted-foreground: oklch(0.556 0 0);
   --accent: oklch(0.97 0 0);
   --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(64.502% 0.23319 28.636); 
+  --destructive: oklch(65.4% 0.238 25.0);
+  --destructive-color: oklch(66.062% 0.21387 29.256);
   /* --destructive: oklch(0.455 0.188 13.697); */
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);

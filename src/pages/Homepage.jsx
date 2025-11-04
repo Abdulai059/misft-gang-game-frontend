@@ -19,12 +19,12 @@ function HeroSection() {
       <div className="relative z-20 min-h-screen flex flex-col justify-center items-center px-2 py-16">
         <div className="max-w-7xl text-center space-y-3 md:-translate-y-10 -mb-50 ">
           {/* Main Title */}
-          <h1 style={{ fontFamily: 'Zombie Hunger, sans-serif' }} className="text-4xl md:text-8xl lg:text-8xl sm:font-[1000] font-[1000] text-glow tracking-widest">
+          <h1  className="text-4xl md:text-8xl lg:text-8xl sm:font-[1000] font-[1000] text-glow tracking-widest">
             {heroData.mainHeading}
           </h1>
 
           {/* Subtitle */}
-          <p className="text-base md:text-2xl font-bold text-red-400 font-body px-3 ">
+          <p className="text-base md:text-2xl font-bold text-destructive-color font-body px-3 ">
             {heroData.subHeading.sub1}{" "}
             <span className="text-white">{heroData.subHeading.highlight}</span>{" "}
             {heroData.subHeading.sub2}
