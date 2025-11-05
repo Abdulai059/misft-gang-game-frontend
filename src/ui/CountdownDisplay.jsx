@@ -1,6 +1,6 @@
 function CountdownDisplay({ days, hours, minutes, seconds }) {
   return (
-    <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
+    <div className="grid grid-flow-col gap-5 text-center auto-cols-max mx-5">
       <div className="flex flex-col p-2 bg-destructive rounded-box text-neutral-content">
         <span className="countdown font-mono text-5xl">
           <span style={{ "--value": days }}></span>

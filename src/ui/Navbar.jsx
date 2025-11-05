@@ -5,10 +5,10 @@ function Navbar() {
     <div className="navbar bg-destructive shadow-sm fixed md:top-10 top-0 left-0 right-0 z-50 max-w-7xl mx-auto md:px-10 md:py-5 p-3 sm:p-4 sm:rounded-md md:rounded-0">
       <div className="navbar-start">
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden text-amber-50">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
+              className="h-6 w-6"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -101,7 +101,7 @@ export function Logo() {
   return (
     <div>
       <img
-        src="/halo-removebg.png"
+        src="/logo.png"
         alt="Misfit Gang Logo"
         className="h-10 w-auto z-50 scale-400"
       />
