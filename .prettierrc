@@ -1,0 +1,11 @@
+{
+  "plugins": [
+    "prettier-plugin-tailwindcss",
+    "prettier-plugin-classnames"
+  ],
+  "tailwindFunctions": ["clsx", "cn"],
+  "classnamesOrder": "alphabetical",
+  "semi": true,
+  "singleQuote": true,
+  "trailingComma": "es5"
+}

@@ -26,6 +26,14 @@ h1, .halloween {
 }
 
 
+/* @custom-variant sm (&:width >= 640px);
+@custom-variant md (&:width >= 768px);
+@custom-variant lg (&:width >= 1024px);
+@custom-variant xl (&:width >= 1280px);
+@custom-variant 2xl (&:width >= 1536px);
+ */
+
+
 /* --------------------------------------
    🌍 Base Layer: Global Variables & Styles
 ----------------------------------------- */
