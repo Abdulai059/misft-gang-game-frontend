@@ -7,7 +7,7 @@ import * as motion from 'motion/react-client';
 export default function SpaceRevengeLanding() {
   return (
     <div
-      className="min-h-screen text-primary relative overflow-hidden max-w-7xl
+      className=" text-primary relative overflow-hidden max-w-7xl
         mx-auto"
     >
       {/* Background texture overlay */}
@@ -184,7 +184,7 @@ export function AppStoreButton() {
 
 export function CharaterCard() {
   return (
-    <div className="flex justify-center flex-col md:mr-10 space-y-14">
+    <div className="flex justify-center flex-col md:mr-10 space-y-14 mt-10 relative">
       <div>
         <h2
           className="text-2xl text-accent-foreground font-bold tracking-wide
@@ -198,9 +198,9 @@ export function CharaterCard() {
       </div>
       <div>
         <motion.img
-          src="/character-bg/ch-2.png"
+          src="/public/assets/ch07.png"
           alt=""
-          className="w-70 h-"
+          className="w-70 h-60 z-50"
           animate={{ rotate: 360 }}
           transition={{ duration: 3, repeat: Infinity, ease: 'linear' }}
         />

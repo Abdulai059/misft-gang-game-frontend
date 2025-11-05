@@ -1,6 +1,7 @@
 import Homepage from "./pages/Homepage";
 import Characters from "./ui/characters";
 import Navbar from "./ui/Navbar";
+import ScrollTriggered from "./pages/detailes";
 
 function App() {
   return (
@@ -8,6 +9,11 @@ function App() {
       <Navbar />
       <Homepage />
       <Characters />
+
+      <div>
+      <h1 style={{ textAlign: "center", marginTop: "50px" }}>Scroll to Animate 🍇</h1>
+      <ScrollTriggered />
+    </div>
     </>
   );
 }
